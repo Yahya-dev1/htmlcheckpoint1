@@ -19,6 +19,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
+    background-color: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +74,10 @@ body {
     margin: 20px 0 40px;
 
 }
+.home-content .name{
+    color: #00abf0;
+    font-size: 19px;
+}
  .home-content .btn-box {
     display: flex;
     justify-content: space-between;
@@ -100,15 +105,51 @@ body {
     background: transparent;
     color: #00abf0;
  }
+
+.about{
+    height: 100vh;
+    padding: 0 10%;
+    background-color: #00abf0;
+    
+}   
+.aboutme{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    background: #000;
+    
+}
+.info .skills{
+    flex: 1;
+    margin: 200px;
+
+
+}
+.aboutme h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+
+
+
+
  .home-sci {
-    position: absolute;
-    bottom: 40px;
+    position: relative;
+    bottom: 10px;
     width: 170px;
+    display: inline;
+    flex-direction: row;
 
  }
 .home-sci a {
     position: relative;
     display: inline-flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -140,4 +181,69 @@ body {
 .home-sci a:hover::before {
     width: 100%;
 
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+
+}
+.container .back{
+
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 1400px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+}
+.footer{
+    background-color: #0d5a91;
+    padding: 70px 0;
+
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px; 
+
+}
+.footer-col a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+
+}
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    background-color:#fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#fff;
+    text-decoration: none;
+    font-weight:300;
 }
